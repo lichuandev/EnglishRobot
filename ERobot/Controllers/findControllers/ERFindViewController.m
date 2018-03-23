@@ -40,6 +40,7 @@
 @property (nonatomic, strong) NSArray * allFindsWordsA;
 @property (nonatomic, strong) ERWord *lastWord;
 @property (nonatomic, strong) NSString *firstW;
+// 语音识别
 @property (nonatomic, strong) SFSpeechRecognitionTask *task;
 @property (nonatomic, strong) AVAudioEngine *engine;
 @property (nonatomic, strong) SFSpeechRecognizer *recongizer;
@@ -172,6 +173,7 @@
                 if (status == SFSpeechRecognizerAuthorizationStatusAuthorized) {
                     weakSelf.speechButton.enabled = YES;
                     if (!weakSelf.engine) {
+                        // 初始化录音引擎
                         weakSelf.engine = [[AVAudioEngine alloc] init];
                         
                     }
@@ -376,94 +378,109 @@
     NSLog(@"");
 }
 - (IBAction)speech:(id)sender {
-    [_speechButton setImage:[UIImage imageNamed:@"话筒_S"] forState:UIControlStateNormal];
-    _speechButton.enabled = NO;
-    CABasicAnimation *anim = [CABasicAnimation animation];
-    anim.keyPath = @"transform.rotation";
-    anim.toValue = @(M_PI * 2);
-    
-    anim.duration = 2;
-    
-    anim.repeatCount = MAXFLOAT;
-    
-    /*** 固定动画结束时 视图的位置 *****/
-    anim.removedOnCompletion = NO;
-    anim.fillMode = kCAFillModeForwards;
-    
-    [self.speechButton.layer addAnimation:anim forKey:nil];
-    __weak typeof(self) weakSelf = self;
-    if (!_recongizer) {
-        _recongizer = [[SFSpeechRecognizer alloc] init];
-    }
-    if (!_request) {
-        _request = [[SFSpeechAudioBufferRecognitionRequest alloc] init];
-        _request.shouldReportPartialResults = true;
-    }
-    
-    AVAudioSession *session = [AVAudioSession sharedInstance];
-    NSError *error;
-    [session setCategory:AVAudioSessionCategoryRecord error:&error];
-    if (error) {
-        self.wordTF.text = error.description;
-        self.speechView.hidden = YES;
-        return;
-    }
-    [session setMode:AVAudioSessionModeMeasurement error:&error];
-    if (error) {
-        self.wordTF.text = error.description;
-        self.speechView.hidden = YES;
-        return;
-    }
-    [session setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
-    if (error) {
-        self.wordTF.text = error.description;
-        self.speechView.hidden = YES;
-        return;
-    }
-    
-    if (!_engine.inputNode) {
-        self.wordTF.text = @"无输入节点";
-        self.speechView.hidden = YES;
-        return;
+    _speechButton.selected = !_speechButton.selected;
+    if (_speechButton.selected) {
+        [_speechButton setImage:[UIImage imageNamed:@"话筒_S"] forState:UIControlStateNormal];
+        //_speechButton.enabled = NO;
+        CABasicAnimation *anim = [CABasicAnimation animation];
+        anim.keyPath = @"transform.rotation";
+        anim.toValue = @(M_PI * 2);
         
-    }
-    
-    
-    [_engine.inputNode installTapOnBus:0 bufferSize:1024 format:[_engine.inputNode outputFormatForBus:0] block:^(AVAudioPCMBuffer * _Nonnull buffer, AVAudioTime * _Nonnull when) {
-        if (buffer) {
-            [_request appendAudioPCMBuffer:buffer];
+        anim.duration = 2;
+        
+        anim.repeatCount = MAXFLOAT;
+        
+        /*** 固定动画结束时 视图的位置 *****/
+        anim.removedOnCompletion = NO;
+        anim.fillMode = kCAFillModeForwards;
+        
+        [self.speechButton.layer addAnimation:anim forKey:nil];
+        __weak typeof(self) weakSelf = self;
+        // 初始化识别器
+        if (!_recongizer) {
+            _recongizer = [[SFSpeechRecognizer alloc] init];
+        }
+        // 初始化识别请求
+        if (_request) {
+            [_request endAudio];
+            _request = nil;
             
         }
-    }];
-    if (_task != nil) {
-        [_task cancel];
-        _task = nil;
-    }
-    
-      _task = [_recongizer recognitionTaskWithRequest:_request resultHandler:^(SFSpeechRecognitionResult * _Nullable result, NSError * _Nullable error) {
-        if (result) {
-            weakSelf.wordTF.text = result.bestTranscription.formattedString;
-            [_engine pause];
-//            [_task cancel];
-//            _task = nil;
-            weakSelf.speechView.hidden = YES;
-            [weakSelf.speechButton setImage:[UIImage imageNamed:@"话筒"] forState:UIControlStateNormal];
-            [self.speechButton.layer removeAllAnimations];
-        }
+        _request = [[SFSpeechAudioBufferRecognitionRequest alloc] init];
+        _request.shouldReportPartialResults = true;
+        // 对音频录制的配置
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        NSError *error;
+        [session setCategory:AVAudioSessionCategoryRecord error:&error];
         if (error) {
             self.wordTF.text = error.description;
-//            [_engine pause];
-//            [_task cancel];
-//            _task = nil;
-            [self.speechButton.layer removeAllAnimations];
-            weakSelf.speechView.hidden = YES;
-            [weakSelf.speechButton setImage:[UIImage imageNamed:@"话筒"] forState:UIControlStateNormal];
+            self.speechView.hidden = YES;
+            return;
         }
-    }];
+        [session setMode:AVAudioSessionModeMeasurement error:&error];
+        if (error) {
+            self.wordTF.text = error.description;
+            self.speechView.hidden = YES;
+            return;
+        }
+        [session setActive:YES withOptions:AVAudioSessionSetActiveOptionNotifyOthersOnDeactivation error:&error];
+        if (error) {
+            self.wordTF.text = error.description;
+            self.speechView.hidden = YES;
+            return;
+        }
+        
+        if (!_engine.inputNode) {
+            self.wordTF.text = @"无输入节点";
+            self.speechView.hidden = YES;
+            return;
+            
+        }
+        
+        // 进行录音
+        [_engine.inputNode installTapOnBus:0 bufferSize:1024 format:[_engine.inputNode outputFormatForBus:0] block:^(AVAudioPCMBuffer * _Nonnull buffer, AVAudioTime * _Nonnull when) {
+            if (buffer) {
+                // 将录音文件拼接成识别请求
+                [_request appendAudioPCMBuffer:buffer];
+                
+            }
+        }];
+        // 创建识别请求
+        if (_task != nil) {
+            [_task cancel];
+            _task = nil;
+        }
+        
+        _task = [_recongizer recognitionTaskWithRequest:_request resultHandler:^(SFSpeechRecognitionResult * _Nullable result, NSError * _Nullable error) {
+            if (result) {
+                weakSelf.wordTF.text = result.bestTranscription.formattedString;
+                // [_engine pause];
+                //            [_task cancel];
+                //            _task = nil;
+                //weakSelf.speechView.hidden = YES;
+                //[weakSelf.speechButton setImage:[UIImage imageNamed:@"话筒"] forState:UIControlStateNormal];
+                //[self.speechButton.layer removeAllAnimations];
+            }
+            
+        }];
+        
+        [_engine prepare];
+        [_engine startAndReturnError:&error];
+    }else{
+        [self stopRecognition];
+    }
     
-    [_engine prepare];
-    [_engine startAndReturnError:&error];
 }
-
+-(void) stopRecognition {
+    [self.speechButton.layer removeAllAnimations];
+    self.speechView.hidden = YES;
+    [self.speechButton setImage:[UIImage imageNamed:@"话筒"] forState:UIControlStateNormal];
+    [_engine stop];
+    [_engine.inputNode removeTapOnBus:0];
+    [_request endAudio];
+    _request = nil;
+    [_task cancel];
+    _task = nil;
+}
 
 @end

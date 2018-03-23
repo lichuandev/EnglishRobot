@@ -329,22 +329,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764284.513713"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "348"
-            endingLineNumber = "348"
-            landmarkName = "-deleteAll:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/writeControllers/ERDetailViewController.m"
             timestampString = "511782792.774099"
             startingColumnNumber = "9223372036854775807"
@@ -384,7 +368,7 @@
             startingLineNumber = "131"
             endingLineNumber = "131"
             landmarkName = "-dealloc"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -400,7 +384,7 @@
             startingLineNumber = "59"
             endingLineNumber = "59"
             landmarkName = "-pin:"
-            landmarkType = "5">
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -410,11 +394,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "511864568.183136"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -426,11 +410,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513683809.373947"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "116"
+            endingLineNumber = "116"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -442,11 +426,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764284.513713"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
+            startingLineNumber = "248"
+            endingLineNumber = "248"
             landmarkName = "-setMyView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -458,11 +442,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513758910.564149"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -474,11 +458,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764284.513713"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
+            startingLineNumber = "244"
+            endingLineNumber = "244"
             landmarkName = "-setMyView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -490,11 +474,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764284.513713"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
             landmarkName = "-setMyView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -665,22 +649,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764284.513713"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "354"
-            endingLineNumber = "354"
-            landmarkName = "-prepareForSegue:sender:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/writeControllers/ERViewController.m"
             timestampString = "512725822.828685"
             startingColumnNumber = "9223372036854775807"
@@ -746,11 +714,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513682442.169228"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -762,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513758910.564149"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "120"
-            endingLineNumber = "120"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -778,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513758910.564149"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
             <Locations>
@@ -793,12 +761,12 @@
                   symbolName = "__40-[ERFindViewController findButtonClick:]_block_invoke"
                   moduleName = "ERobot"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/%E6%88%91%E7%9A%84/ER/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
-                  timestampString = "517973896.093563"
+                  urlString = "file:///Users/mac/Desktop/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
+                  timestampString = "543321406.1644191"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
                   offsetFromSymbolStart = "432">
                </Location>
                <Location
@@ -808,12 +776,12 @@
                   symbolName = "__40-[ERFindViewController findButtonClick:]_block_invoke"
                   moduleName = "ERobot"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/%E6%88%91%E7%9A%84/ER/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
-                  timestampString = "517973896.095655"
+                  urlString = "file:///Users/mac/Desktop/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
+                  timestampString = "543321406.166499"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "128"
-                  endingLineNumber = "128"
+                  startingLineNumber = "129"
+                  endingLineNumber = "129"
                   offsetFromSymbolStart = "508">
                </Location>
             </Locations>
@@ -826,11 +794,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513758910.564149"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "130"
+            endingLineNumber = "130"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
          </BreakpointContent>
@@ -842,11 +810,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764284.513713"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "269"
-            endingLineNumber = "269"
+            startingLineNumber = "271"
+            endingLineNumber = "271"
             landmarkName = "-setMyView:"
             landmarkType = "7">
          </BreakpointContent>
@@ -858,11 +826,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513758910.564149"
+            timestampString = "543321195.054038"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "124"
-            endingLineNumber = "124"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "-findButtonClick:"
             landmarkType = "7">
             <Locations>
@@ -873,12 +841,12 @@
                   symbolName = "__40-[ERFindViewController findButtonClick:]_block_invoke"
                   moduleName = "ERobot"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/%E6%88%91%E7%9A%84/ER/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
-                  timestampString = "517973896.109467"
+                  urlString = "file:///Users/mac/Desktop/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
+                  timestampString = "543321406.179706"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
                   offsetFromSymbolStart = "284">
                </Location>
                <Location
@@ -888,12 +856,12 @@
                   symbolName = "__40-[ERFindViewController findButtonClick:]_block_invoke_3"
                   moduleName = "ERobot"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/mac/Desktop/%E6%88%91%E7%9A%84/ER/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
-                  timestampString = "517973896.111563"
+                  urlString = "file:///Users/mac/Desktop/ERobot/ERobot/Controllers/findControllers/ERFindViewController.m"
+                  timestampString = "543321406.181829"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "124"
-                  endingLineNumber = "124"
+                  startingLineNumber = "125"
+                  endingLineNumber = "125"
                   offsetFromSymbolStart = "24">
                </Location>
             </Locations>
@@ -906,91 +874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764891.958232"
+            timestampString = "543321401.359502"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "408"
-            endingLineNumber = "408"
-            landmarkName = "-speech:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764891.958232"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "414"
-            endingLineNumber = "414"
-            landmarkName = "-speech:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764891.958232"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "426"
-            endingLineNumber = "426"
-            landmarkName = "-speech:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764891.958232"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "420"
-            endingLineNumber = "420"
-            landmarkName = "-speech:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513765565.073149"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "445"
-            endingLineNumber = "445"
-            landmarkName = "-speech:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "ERobot/Controllers/findControllers/ERFindViewController.m"
-            timestampString = "513764891.958232"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "456"
-            endingLineNumber = "456"
+            startingLineNumber = "457"
+            endingLineNumber = "457"
             landmarkName = "-speech:"
             landmarkType = "7">
          </BreakpointContent>
